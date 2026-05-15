@@ -1,0 +1,342 @@
+{
+  "categories": [
+    {
+      "id": "mandi",
+      "name": "Non-Veg South Indian Mandi",
+      "description": "Signature mandi feasts finished with Arabian spices and slow-roasted tenderness.",
+      "items": [
+        {
+          "id": "mandi-mafia-special",
+          "name": "Mandi Mafia Special",
+          "description": "House signature with smoky rice, royal gravy, and bold Arabian notes.",
+          "variants": [
+            { "label": "Half", "price": 749 },
+            { "label": "Full", "price": 1399 }
+          ],
+          "isChefSpecial": true,
+          "image": "/mafia/pic1.png",
+          "tags": ["signature", "mandi", "special"]
+        },
+        {
+          "id": "sultan-darbar",
+          "name": "Sultan Darbar",
+          "description": "Regal mandi platter crafted for grand gatherings.",
+          "variants": [
+            { "label": "Half", "price": 799 },
+            { "label": "Full", "price": 1499 }
+          ],
+          "isChefSpecial": true,
+          "image": "/mafia/pic2.png",
+          "tags": ["signature", "mandi", "special"]
+        },
+        {
+          "id": "juicy-crab-mandi",
+          "name": "Juicy Crab Mandi",
+          "description": "Succulent crab, slow-steamed mandi rice, coastal spice finish.",
+          "variants": [
+            { "label": "Half", "price": 579 },
+            { "label": "Full", "price": 899 }
+          ],
+          "image": "/mafia/pic3.png",
+          "tags": ["crab", "seafood", "mandi"]
+        },
+        {
+          "id": "alfaham-chicken-mandi",
+          "name": "Alfaham Chicken Mandi",
+          "description": "Char-grilled alfaham paired with aromatic mandi rice.",
+          "variants": [
+            { "label": "Half", "price": 649 },
+            { "label": "Full", "price": 1249 }
+          ],
+          "image": "/mafia/pic4.png",
+          "tags": ["alfaham", "chicken", "mandi"]
+        },
+        {
+          "id": "bhimavaram-royyala-mandi",
+          "name": "Bhimavaram Royyala Mandi",
+          "description": "Prawns with spice-forward mandi rice, coastal luxe.",
+          "variants": [
+            { "label": "Half", "price": 799 },
+            { "label": "Full", "price": 1499 }
+          ],
+          "image": "/mafia/pic5.png",
+          "tags": ["prawns", "seafood", "mandi"]
+        },
+        {
+          "id": "pepper-mutton-mandi",
+          "name": "Pepper Mutton Mandi",
+          "description": "Slow-braised mutton, pepper heat, smoky finish.",
+          "variants": [
+            { "label": "Half", "price": 699 },
+            { "label": "Full", "price": 1299 }
+          ],
+          "image": "/mafia/pic6.png",
+          "tags": ["mutton", "spicy", "mandi"]
+        },
+        {
+          "id": "arabian-fish-mandi",
+          "name": "Arabian Fish Mandi",
+          "description": "Grilled fish with saffron mandi rice and charred citrus.",
+          "variants": [
+            { "label": "Half", "price": 749 },
+            { "label": "Full", "price": 1399 }
+          ],
+          "image": "/mafia/pic7.png",
+          "tags": ["fish", "mandi", "arabian"]
+        }
+      ]
+    },
+    {
+      "id": "starters",
+      "name": "Starters (Chinese, Tandoori, Grilled)",
+      "description": "High-impact openers with smoke, sizzle, and spice.",
+      "items": [
+        {
+          "id": "chicken-chinese-sizzler",
+          "name": "Chicken Chinese Sizzler",
+          "description": "Wok-tossed chicken served on a sizzling platter.",
+          "price": 429,
+          "image": "/mafia/pic8.png",
+          "tags": ["chinese", "sizzler", "chicken"]
+        },
+        {
+          "id": "mutton-seekh-kebab",
+          "name": "Mutton Seekh Kebab",
+          "description": "Charred kebabs with herb-rich marinade.",
+          "price": 499,
+          "image": "/mafia/pic9.png",
+          "tags": ["tandoori", "kebab", "mutton"]
+        },
+        {
+          "id": "peri-peri-grilled-fish",
+          "name": "Peri Peri Grilled Fish",
+          "description": "Flame-grilled fish with peri peri glaze.",
+          "price": 399,
+          "image": "/mafia/pic10.png",
+          "tags": ["grilled", "fish", "peri peri"]
+        },
+        {
+          "id": "tandoori-chicken",
+          "name": "Tandoori Chicken",
+          "description": "Smoky, tender, and lacquered with spices.",
+          "price": 359,
+          "image": "/mafia/pic8.png",
+          "tags": ["tandoori", "chicken"]
+        },
+        {
+          "id": "dragon-chicken",
+          "name": "Dragon Chicken",
+          "description": "Crispy chicken tossed in hot garlic sauce.",
+          "price": 349,
+          "image": "/mafia/pic9.png",
+          "tags": ["chinese", "spicy"]
+        },
+        {
+          "id": "chilli-garlic-prawns",
+          "name": "Chilli Garlic Prawns",
+          "description": "Saucy prawns with garlic heat and sheen.",
+          "price": 459,
+          "image": "/mafia/pic10.png",
+          "tags": ["prawns", "chinese", "spicy"]
+        },
+        {
+          "id": "smoky-grilled-wings",
+          "name": "Smoky Grilled Wings",
+          "description": "Charred wings finished with roasted glaze.",
+          "price": 329,
+          "image": "/mafia/pic8.png",
+          "tags": ["grilled", "chicken"]
+        }
+      ]
+    },
+    {
+      "id": "turkish",
+      "name": "Turkish Specials",
+      "description": "Ankara-inspired favorites with fresh bakes and dips.",
+      "items": [
+        {
+          "id": "minced-chicken-pide",
+          "name": "Minced Chicken Pide",
+          "description": "Boat-shaped flatbread with minced chicken.",
+          "price": 379,
+          "image": "/mafia/pic11.png",
+          "tags": ["turkish", "pide"]
+        },
+        {
+          "id": "spinach-fatayer",
+          "name": "Spinach Fatayer",
+          "description": "Baked pockets with spinach and herbs.",
+          "price": 279,
+          "image": "/mafia/pic11.png",
+          "tags": ["turkish", "baked"]
+        },
+        {
+          "id": "hummus-pitabread",
+          "name": "Hummus with Pitabread",
+          "description": "Creamy hummus, warm pita, olive oil finish.",
+          "price": 399,
+          "image": "/mafia/pic11.png",
+          "tags": ["hummus", "pita"]
+        },
+        {
+          "id": "lamb-adana-kebab",
+          "name": "Lamb Adana Kebab",
+          "description": "Skewered lamb with smoky char and sumac.",
+          "price": 499,
+          "image": "/mafia/pic11.png",
+          "tags": ["kebab", "lamb"]
+        },
+        {
+          "id": "turkish-shawarma-plate",
+          "name": "Turkish Shawarma Plate",
+          "description": "Sliced shawarma with pilaf and sauces.",
+          "price": 399,
+          "image": "/mafia/pic11.png",
+          "tags": ["shawarma", "turkish"]
+        },
+        {
+          "id": "cheese-manakish",
+          "name": "Cheese Manakish",
+          "description": "Soft bake with melted cheese and sesame.",
+          "price": 249,
+          "image": "/mafia/pic11.png",
+          "tags": ["baked", "cheese"]
+        }
+      ]
+    },
+    {
+      "id": "desserts-drinks",
+      "name": "Desserts & Drinks",
+      "description": "Sweet finales and signature mojitos.",
+      "items": [
+        {
+          "id": "kaddu-ka-kheer",
+          "name": "Kaddu Ka Kheer",
+          "description": "Slow-cooked pumpkin kheer with saffron.",
+          "price": 199,
+          "image": "/mafia/pic12.png",
+          "tags": ["dessert", "kheer"]
+        },
+        {
+          "id": "apricot-delight",
+          "name": "Apricot Delight",
+          "description": "Apricot custard with nut crumble.",
+          "price": 299,
+          "image": "/mafia/pic12.png",
+          "tags": ["dessert", "apricot"]
+        },
+        {
+          "id": "kunafa",
+          "name": "Kunafa",
+          "description": "Crisp pastry with cheese and syrup glaze.",
+          "price": 299,
+          "image": "/mafia/pic12.png",
+          "tags": ["dessert", "kunafa"]
+        },
+        {
+          "id": "baklava",
+          "name": "Baklava",
+          "description": "Layered pastry with pistachio and honey.",
+          "price": 249,
+          "image": "/mafia/pic12.png",
+          "tags": ["dessert", "baklava"]
+        },
+        {
+          "id": "blood-red-cranberry-mojito",
+          "name": "Blood Red Cranberry Mojito",
+          "description": "Signature cranberry mojito with mint.",
+          "price": 149,
+          "image": "/mafia/pic13.png",
+          "tags": ["mojito", "drink"]
+        },
+        {
+          "id": "blue-lagoon-mojito",
+          "name": "Blue Lagoon Mojito",
+          "description": "Citrus-blue mojito with cool finish.",
+          "price": 149,
+          "image": "/mafia/pic13.png",
+          "tags": ["mojito", "drink"]
+        },
+        {
+          "id": "arabian-mint-mojito",
+          "name": "Arabian Mint Mojito",
+          "description": "Mint-lime sparkle with Arabian twist.",
+          "price": 149,
+          "image": "/mafia/pic13.png",
+          "tags": ["mojito", "drink"]
+        },
+        {
+          "id": "rose-milk",
+          "name": "Rose Milk",
+          "description": "Chilled rose milk with basil seeds.",
+          "price": 129,
+          "image": "/mafia/pic12.png",
+          "tags": ["drink", "rose"]
+        }
+      ]
+    },
+    {
+      "id": "extras",
+      "name": "Extras & Beverages",
+      "description": "Perfect add-ons to elevate the feast.",
+      "items": [
+        {
+          "id": "mineral-water",
+          "name": "Mineral Water",
+          "description": "500 ml.",
+          "price": 20,
+          "image": "/mafia/pic13.png",
+          "tags": ["water"]
+        },
+        {
+          "id": "soft-drink",
+          "name": "Soft Drink",
+          "description": "Coke / Sprite / Thums Up.",
+          "price": 60,
+          "image": "/mafia/pic13.png",
+          "tags": ["beverage"]
+        },
+        {
+          "id": "fresh-lime-soda",
+          "name": "Fresh Lime Soda",
+          "description": "Sweet or salted.",
+          "price": 79,
+          "image": "/mafia/pic13.png",
+          "tags": ["beverage"]
+        },
+        {
+          "id": "extra-mandi-rice",
+          "name": "Extra Mandi Rice",
+          "description": "Add-on aromatic rice.",
+          "price": 129,
+          "image": "/mafia/pic1.png",
+          "tags": ["extra", "rice"]
+        },
+        {
+          "id": "extra-pita",
+          "name": "Extra Pita Bread",
+          "description": "Warm pita bread.",
+          "price": 49,
+          "image": "/mafia/pic11.png",
+          "tags": ["extra", "bread"]
+        },
+        {
+          "id": "garlic-mayo-dip",
+          "name": "Extra Garlic Mayo Dip",
+          "description": "Creamy garlic mayo.",
+          "price": 39,
+          "image": "/mafia/pic11.png",
+          "tags": ["extra", "dip"]
+        },
+        {
+          "id": "arabian-pickle",
+          "name": "Extra Arabian Pickle",
+          "description": "Tangy house pickle.",
+          "price": 29,
+          "image": "/mafia/pic11.png",
+          "tags": ["extra", "pickle"]
+        }
+      ]
+    }
+  ]
+}
