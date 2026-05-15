@@ -14,35 +14,68 @@ export default function InfiniteSlider() {
     offset: ["start end", "end start"]
   });
   const parallaxY = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2, 0.8, 1], [0.3, 1, 1, 0.3]);
 
   return (
-    <div
+    <motion.div
       ref={ref}
-      className="relative w-full overflow-hidden"
+      className="relative w-full overflow-hidden py-8"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       onTouchStart={() => setPaused(true)}
       onTouchEnd={() => setPaused(false)}
+      style={{ opacity }}
     >
       <div className="no-scrollbar overflow-x-auto">
         <div
-          className="flex gap-4 w-max animate-marquee"
+          className="flex gap-2 sm:gap-3 md:gap-4 w-max animate-marquee px-4"
           style={{ animationPlayState: paused ? "paused" : "running" }}
         >
           {track.map((src, index) => (
-            <motion.img
+            <motion.div
               key={`${src}-${index}`}
-              src={src}
-              alt="Ambience"
-              className="h-64 sm:h-72 md:h-80 w-[280px] sm:w-[360px] md:w-[420px] rounded-2xl object-cover shadow-2xl"
-              style={{ y: parallaxY }}
-            />
+              className="flex-shrink-0"
+              whileHover={{ scale: 1.05 }}
+              transition={{ duration: 0.3 }}
+            >
+              <motion.div
+                className="relative rounded-lg sm:rounded-2xl overflow-hidden shadow-lg group cursor-pointer"
+                whileHover={{ y: -4 }}
+              >
+                <motion.img
+                  src={src}
+                  alt="Ambience"
+                  className="h-32 sm:h-48 md:h-64 w-[120px] sm:w-[200px] md:w-[280px] object-cover"
+                  style={{ y: parallaxY }}
+                  loading="lazy"
+                />
+                
+                {/* Enhanced Overlay */}
+                <motion.div
+                  className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                  initial={{ opacity: 0 }}
+                  whileHover={{ opacity: 1 }}
+                />
+
+                {/* Glow Border */}
+                <motion.div
+                  className="absolute inset-0 rounded-xl sm:rounded-2xl border border-gold/0"
+                  whileHover={{ borderColor: "rgba(212,175,55,0.5)" }}
+                  transition={{ duration: 0.3 }}
+                />
+              </motion.div>
+            </motion.div>
           ))}
         </div>
       </div>
-      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-black/60 px-4 py-2 rounded-full text-xs text-gold uppercase tracking-[0.2em]">
-        Swipe to Explore
-      </div>
-    </div>
+      
+      <motion.div 
+        className="absolute bottom-2 sm:bottom-4 left-1/2 -translate-x-1/2 bg-black/60 backdrop-blur-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-[11px] sm:text-xs text-gold uppercase tracking-[0.2em] whitespace-nowrap"
+        animate={{ y: paused ? 0 : [0, -3, 0] }}
+        transition={{ duration: 2, repeat: Infinity }}
+      >
+        {paused ? "✓ Release to Continue" : "← Swipe to Explore →"}
+      </motion.div>
+    </motion.div>
   );
 }

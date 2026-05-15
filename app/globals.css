@@ -41,6 +41,49 @@
   .animate-marquee {
     animation: marquee 38s linear infinite;
   }
+
+  /* Smooth scroll progress indicator */
+  .scroll-progress {
+    animation: scrollProgress 0.3s ease-out;
+  }
+
+  /* Button ripple effect */
+  .ripple {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .ripple::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(212, 175, 55, 0.5);
+    transform: translate(-50%, -50%);
+    animation: ripple 0.6s ease-out;
+  }
+
+  /* Glow effect for special items */
+  .glow-effect {
+    position: relative;
+  }
+
+  .glow-effect::before {
+    content: '';
+    position: absolute;
+    inset: -1px;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(45deg, #D4AF37, rgba(212, 175, 55, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    opacity: 0;
+    animation: glow 2s ease-in-out infinite;
+  }
 }
 
 @keyframes smoke {
@@ -70,5 +113,36 @@
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    width: 0;
+    height: 0;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes scrollProgress {
+  from {
+    transform: scaleX(0);
+    transform-origin: left;
+  }
+  to {
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
